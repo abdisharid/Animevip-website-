@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl" class="scroll-smooth dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AnimeVIP - التجربة المطلقة لعشاق الأنمي | تحميل تطبيق APK</title>
+  <meta name="description" content="الصفحة الرسمية لتطبيق AnimeVIP - تطبيق الأنمي الأقوى لمشاهدة وتحميل أحدث مسلسلات وأفلام الأنمي بأعلى جودة وبدون إعلانات.">
+  
+  <!-- Tailwind CSS via CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              50: '#f5f3ff',
+              100: '#ede9fe',
+              500: '#8b5cf6',
+              600: '#7c3aed',
+              700: '#6d28d9',
+              900: '#4c1d95',
+              950: '#2e1065',
+            }
+          },
+          fontFamily: {
+            cairo: ['Cairo', 'sans-serif'],
+            sans: ['Plus Jakarta Sans', 'Cairo', 'sans-serif']
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- Google Fonts: Cairo & Plus Jakarta Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800;900&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome 6 Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+
+  <style>
+    body {
+      font-family: 'Cairo', sans-serif;
+      background-color: #09090b;
+      color: #f4f4f5;
+    }
+    .glass-card {
+      background: rgba(24, 24, 27, 0.6);
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+    }
+    .glass-card:hover {
+      border-color: rgba(139, 92, 246, 0.5);
+      box-shadow: 0 20px 40px -15px rgba(139, 92, 246, 0.25);
+    }
+  </style>
+</head>
+<body class="bg-[#09090b] text-[#f4f4f5] antialiased selection:bg-purple-600 selection:text-white overflow-x-hidden">
+
+  <!-- ========================================================================= -->
+  <!-- 🔗 رابط تحميل ملف الـ APK الخاص بتطبيق AnimeVIP (Google Drive المباشر)   -->
+  <!-- ========================================================================= -->
+  <script>
+    // رابط ملف الـ APK المباشر على Google Drive:
+    const APK_DOWNLOAD_URL = "https://drive.google.com/file/d/1TSZv8tSu1x8qH1uAHBt6-gzwE9IuuFPf/view?usp=drivesdk";
+  </script>
+  <!-- ========================================================================= -->
+
+  <!-- الخلفية الضوئية المتوهجة -->
+  <div class="fixed inset-0 pointer-events-none -z-10 overflow-hidden">
+    <div class="absolute -top-40 -right-40 w-96 h-96 rounded-full bg-violet-600/15 blur-[120px]"></div>
+    <div class="absolute top-1/3 -left-40 w-96 h-96 rounded-full bg-fuchsia-600/10 blur-[140px]"></div>
+    <div class="absolute bottom-10 right-1/4 w-96 h-96 rounded-full bg-purple-700/15 blur-[130px]"></div>
+  </div>
+
+  <!-- الشريط العلوي للإشعار -->
+  <div class="bg-gradient-to-r from-violet-950/80 via-purple-900/60 to-violet-950/80 border-b border-violet-500/20 px-4 py-2 text-xs md:text-sm text-violet-200">
+    <div class="max-w-7xl mx-auto flex items-center justify-between">
+      <div class="flex items-center gap-2">
+        <span class="flex h-2 w-2 rounded-full bg-emerald-400 animate-ping"></span>
+        <span class="font-bold text-white">إصدار جديد متاح الآن:</span>
+        <span>AnimeVIP v2.5.0 بميزات وسيرفرات جديدة فائقة السرعة</span>
+      </div>
+      <a href="#download-box" class="text-xs bg-violet-600 hover:bg-violet-500 text-white px-3 py-1 rounded-md font-bold transition">
+        تحميل الآن
+      </a>
+    </div>
+  </div>
+
+  <!-- شريط التنقل (Navbar) -->
+  <header class="sticky top-0 z-40 backdrop-blur-xl bg-[#09090b]/80 border-b border-white/5">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+      
+      <!-- الشعار -->
+      <a href="#" class="flex items-center gap-3">
+        <div class="flex items-center justify-center w-11 h-11 rounded-2xl bg-gradient-to-br from-violet-600 to-fuchsia-600 shadow-lg shadow-violet-600/30 ring-1 ring-violet-400/40">
+          <i class="fa-solid fa-crown text-yellow-300 text-xl"></i>
+        </div>
+        <div class="flex flex-col">
+          <div class="flex items-center gap-1.5">
+            <span class="text-2xl font-black tracking-tight text-white font-sans">Anime<span class="text-violet-400">VIP</span></span>
+            <span class="text-[10px] uppercase font-bold tracking-widest bg-violet-500/20 text-violet-300 border border-violet-500/30 px-1.5 py-0.5 rounded">Pro</span>
+          </div>
+          <span class="text-[11px] text-zinc-400 -mt-1 font-medium">عالم الأنمي بين يديك</span>
+        </div>
+      </a>
+
+      <!-- الروابط -->
+      <nav class="hidden md:flex items-center gap-8 text-sm font-semibold text-zinc-300">
+        <a href="#features" class="hover:text-violet-400 transition">المميزات</a>
+        <a href="#how-to-install" class="hover:text-violet-400 transition">طريقة التثبيت</a>
+        <a href="#faq" class="hover:text-violet-400 transition">الأسئلة الشائعة</a>
+      </nav>
+
+      <!-- زر الرأس -->
+      <a 
+        href="https://drive.google.com/file/d/1TSZv8tSu1x8qH1uAHBt6-gzwE9IuuFPf/view?usp=drivesdk" 
+        target="_blank"
+        rel="noopener noreferrer"
+        onclick="downloadApk(event)"
+        class="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl font-bold text-sm text-white bg-gradient-to-r from-violet-600 to-purple-600 hover:from-violet-500 hover:to-purple-500 shadow-md shadow-violet-600/30 hover:scale-105 transition cursor-pointer"
+      >
+        <i class="fa-brands fa-android text-emerald-300 text-base"></i>
+        <span>تحميل التطبيق</span>
+      </a>
+
+    </div>
+  </header>
+
+  <!-- قسم البطل (Hero Section) -->
+  <section class="relative pt-12 pb-20 md:pt-20 md:pb-28">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+        
+        <!-- المحتوى النصي -->
+        <div class="lg:col-span-7 flex flex-col items-center lg:items-start text-center lg:text-right">
+          
+          <!-- الشارة المضيئة -->
+          <div class="inline-flex items-center gap-2.5 px-4 py-1.5 rounded-full bg-violet-950/60 border border-violet-500/30 shadow-lg shadow-violet-950/50 mb-6 animate-pulse">
+            <span class="flex h-2 w-2 rounded-full bg-violet-400"></span>
+            <span class="text-sm font-bold text-violet-200">🔥 التجربة المطلقة لعشاق الأنمي</span>
+            <span class="text-xs bg-violet-500/30 text-violet-300 px-2 py-0.5 rounded-full font-semibold">v2.5.0</span>
+          </div>
+
+          <!-- العنوان الرئيسي -->
+          <h1 class="text-4xl sm:text-5xl lg:text-6xl font-black text-white tracking-tight leading-[1.2] mb-6">
+            شاهد وتصفح أروع مسلسلات الأنمي 
+            <span class="text-transparent bg-clip-text bg-gradient-to-r from-violet-400 via-purple-300 to-fuchsia-400">
+              بدقة 4K فائقة
+            </span> 
+            وبلا أي إعلانات
+          </h1>
+
+          <!-- الوصف -->
+          <p class="text-base sm:text-lg text-zinc-300 leading-relaxed mb-8 max-w-2xl">
+            تطبيق <strong class="text-violet-300">AnimeVIP</strong> يمنحك تجربة سينمائية لا مثيل لها على هاتفك الأندرويد. مكتبة عملاقة تضم آلاف مسلسلات وأفلام الأنمي المترجمة والمدبلجة، بسيرفرات سحابية فائقة السرعة، وإمكانية التحميل المباشر للمشاهدة بدون إنترنت.
+          </p>
+
+          <!-- زر التحميل الرئيسي المضيء والضخم -->
+          <div id="download-box" class="w-full sm:w-auto flex flex-col sm:flex-row items-center gap-4 mb-8">
+            <a
+              href="https://drive.google.com/file/d/1TSZv8tSu1x8qH1uAHBt6-gzwE9IuuFPf/view?usp=drivesdk"
+              target="_blank"
+              rel="noopener noreferrer"
+              onclick="downloadApk(event)"
+              id="main-download-button"
+              class="group relative w-full sm:w-auto inline-flex items-center justify-center gap-4 px-8 py-4 rounded-2xl font-black text-lg text-white bg-gradient-to-r from-violet-600 via-purple-600 to-fuchsia-600 hover:from-violet-500 hover:via-purple-500 hover:to-fuchsia-500 shadow-xl shadow-violet-600/40 hover:shadow-2xl hover:shadow-violet-600/60 hover:scale-[1.03] transition-all duration-300 ring-2 ring-violet-400/40 cursor-pointer"
+            >
+              <div class="flex items-center justify-center w-11 h-11 rounded-xl bg-black/25 border border-white/20 text-emerald-400 text-2xl">
+                <i class="fa-brands fa-android"></i>
+              </div>
+              <div class="flex flex-col text-right">
+                <span class="text-base sm:text-lg font-black leading-tight">تحميل ملف APK الآن</span>
+                <span class="text-xs text-violet-200/90 font-medium">رابط Google Drive المباشر • آمن 100%</span>
+              </div>
+              <i class="fa-solid fa-download text-white/90 mr-2 group-hover:translate-y-1 transition-transform"></i>
+            </a>
+
+            <a
+              href="#how-to-install"
+              class="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-6 py-4 rounded-2xl font-bold text-sm text-zinc-300 bg-zinc-900/80 hover:bg-zinc-800 border border-white/10 hover:border-violet-500/40 transition"
+            >
+              <i class="fa-solid fa-circle-question text-violet-400"></i>
+              <span>طريقة التثبيت السريع</span>
+            </a>
+          </div>
+
+          <!-- شارات الأمان -->
+          <div class="flex flex-wrap items-center justify-center lg:justify-start gap-4 text-xs text-zinc-400">
+            <div class="flex items-center gap-1.5 bg-zinc-900/60 px-3 py-1.5 rounded-lg border border-white/5">
+              <i class="fa-solid fa-shield-check text-emerald-400"></i>
+              <span>فحص أمني VirusTotal (آمن 100%)</span>
+            </div>
+            <div class="flex items-center gap-1.5 bg-zinc-900/60 px-3 py-1.5 rounded-lg border border-white/5">
+              <i class="fa-solid fa-mobile-screen text-violet-400"></i>
+              <span>أندرويد 7.0 فما فوق</span>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- مجسم الهاتف الذكي ثلاثي الأبعاد -->
+        <div class="lg:col-span-5 flex justify-center items-center relative">
+          <div class="relative w-[300px] sm:w-[330px] rounded-[44px] p-3 bg-gradient-to-b from-zinc-700 via-zinc-800 to-zinc-900 shadow-2xl shadow-violet-950/80 border border-zinc-600/40 ring-1 ring-white/10">
+            <div class="rounded-[36px] overflow-hidden bg-[#0e0e12] border border-black aspect-[9/19] flex flex-col justify-between p-3 text-right">
+              
+              <!-- رأس التطبيق الداخلي -->
+              <div class="flex items-center justify-between pt-2 mb-3">
+                <div class="flex items-center gap-1.5">
+                  <div class="w-6 h-6 rounded-md bg-gradient-to-tr from-violet-600 to-fuchsia-600 flex items-center justify-center text-yellow-300 text-xs">
+                    <i class="fa-solid fa-crown text-[10px]"></i>
+                  </div>
+                  <span class="font-bold text-xs text-white">AnimeVIP</span>
+                </div>
+                <div class="flex items-center gap-2 text-zinc-400 text-xs">
+                  <i class="fa-solid fa-magnifying-glass"></i>
+                  <i class="fa-solid fa-bell text-violet-400"></i>
+                </div>
+              </div>
+
+              <!-- بطاقة العرض الرئيسي -->
+              <div class="relative rounded-2xl overflow-hidden h-44 bg-zinc-900 border border-violet-500/30 mb-3">
+                <img src="https://images.unsplash.com/photo-1578632767115-351597cf2477?auto=format&fit=crop&w=600&q=80" alt="Anime Poster" class="w-full h-full object-cover opacity-75">
+                <div class="absolute inset-0 bg-gradient-to-t from-[#0e0e12] via-transparent to-transparent"></div>
+                <div class="absolute top-2 right-2 bg-violet-600 text-white text-[9px] font-bold px-2 py-0.5 rounded-full">
+                  الأكثر مشاهدة 🔥
+                </div>
+                <div class="absolute bottom-2 right-2 left-2">
+                  <span class="text-[9px] text-violet-300 font-semibold">مترجم • حلقة 12</span>
+                  <h4 class="text-xs font-black text-white">Solo Leveling: Arise</h4>
+                  <div class="flex items-center justify-between mt-1">
+                    <span class="text-[9px] text-amber-300 font-bold">⭐ 9.8/10</span>
+                    <span class="bg-violet-600 text-white text-[9px] px-2 py-0.5 rounded font-bold">مشاهدة</span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- قائمة مصغرة -->
+              <div class="space-y-2">
+                <div class="flex justify-between items-center text-[10px] font-bold text-zinc-400">
+                  <span>أحدث الحلقات اليومية</span>
+                  <span class="text-violet-400">الكل</span>
+                </div>
+                <div class="bg-zinc-900/90 rounded-xl p-2 border border-white/5 flex items-center gap-2.5">
+                  <div class="w-10 h-10 rounded-lg bg-zinc-800 overflow-hidden shrink-0">
+                    <img src="https://images.unsplash.com/photo-1563089145-599997674d42?auto=format&fit=crop&w=150&q=80" class="w-full h-full object-cover">
+                  </div>
+                  <div class="flex-1 truncate">
+                    <h5 class="text-[11px] font-bold text-white truncate">Demon Slayer: Hashira Training</h5>
+                    <p class="text-[9px] text-zinc-400">سيرفر فائق السرعة • بدقة 4K</p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- شريط التنقل السفلي في الهاتف -->
+              <div class="pt-3 border-t border-white/10 flex justify-around text-zinc-500 text-xs">
+                <i class="fa-solid fa-house text-violet-400"></i>
+                <i class="fa-solid fa-compass"></i>
+                <i class="fa-solid fa-circle-down"></i>
+                <i class="fa-solid fa-user"></i>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- شريط الإحصائيات (Stats Bar) -->
+  <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 -mt-6 sm:-mt-8">
+    <div class="bg-gradient-to-b from-zinc-900/90 to-zinc-950/90 backdrop-blur-xl border border-violet-500/20 rounded-3xl p-6 md:p-8 shadow-2xl">
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
+        <div>
+          <span class="text-3xl font-black text-white font-sans">500,000+</span>
+          <p class="text-xs font-semibold text-zinc-300 mt-1">مستخدم نشط يومياً</p>
+        </div>
+        <div>
+          <span class="text-3xl font-black text-white font-sans">18,500+</span>
+          <p class="text-xs font-semibold text-zinc-300 mt-1">حلقة وفيلم أنمي</p>
+        </div>
+        <div>
+          <span class="text-3xl font-black text-white font-sans">100%</span>
+          <p class="text-xs font-semibold text-zinc-300 mt-1">مجاني وآمن ومحمي</p>
+        </div>
+        <div>
+          <span class="text-3xl font-black text-white font-sans">4.9 / 5</span>
+          <p class="text-xs font-semibold text-zinc-300 mt-1">تقييم مستخدمي الأنمي</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- قسم الميزات (Features Section: 3 Glassmorphism Cards) -->
+  <section id="features" class="py-24">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center max-w-3xl mx-auto mb-16">
+        <span class="text-xs uppercase font-extrabold tracking-widest text-violet-400 bg-violet-500/10 border border-violet-500/20 px-3.5 py-1.5 rounded-full">
+          ميزات لا تُضاهى
+        </span>
+        <h2 class="text-3xl sm:text-4xl font-black text-white mt-4">
+          أهم مزايا تطبيق <span class="text-violet-400">AnimeVIP</span>
+        </h2>
+        <p class="text-zinc-400 mt-3 text-base">
+          تطبيق مصمم خصيصاً ليقدم لك أعلى جودة وأسرع تشغيل ممكن بدون أي تعقيد.
+        </p>
+      </div>
+
+      <!-- شبكة من 3 بطاقات زجاجية -->
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        
+        <!-- البطاقة 1 -->
+        <div class="glass-card rounded-3xl p-8 transition-all duration-300 flex flex-col justify-between">
+          <div>
+            <div class="w-14 h-14 rounded-2xl bg-violet-600/30 border border-violet-500/40 flex items-center justify-center text-violet-400 text-2xl mb-6">
+              <i class="fa-solid fa-film"></i>
+            </div>
+            <h3 class="text-2xl font-black text-white mb-3">مكتبة أنمي ضخمة بدقة 4K</h3>
+            <p class="text-zinc-400 text-sm leading-relaxed mb-6">
+              آلاف المسلسلات والأفلام مع ترجمة احترافية ودبلجة عربية، وتحديث فوري للحلقات فور صدورها في اليابان بجودات متعددة من 360p إلى 4K.
+            </p>
+          </div>
+          <ul class="space-y-2 border-t border-white/5 pt-4 text-xs text-zinc-300">
+            <li><i class="fa-solid fa-check text-violet-400 ml-1.5"></i> تحديثات يومية مستمرة</li>
+            <li><i class="fa-solid fa-check text-violet-400 ml-1.5"></i> سيرفرات مشاهدة متعددة</li>
+          </ul>
+        </div>
+
+        <!-- البطاقة 2 -->
+        <div class="glass-card rounded-3xl p-8 border-violet-500/30 transition-all duration-300 flex flex-col justify-between">
+          <div>
+            <div class="w-14 h-14 rounded-2xl bg-fuchsia-600/30 border border-fuchsia-500/40 flex items-center justify-center text-fuchsia-400 text-2xl mb-6">
+              <i class="fa-solid fa-bolt"></i>
+            </div>
+            <h3 class="text-2xl font-black text-white mb-3">سريع وخفيف وبلا إعلانات</h3>
+            <p class="text-zinc-400 text-sm leading-relaxed mb-6">
+              لا إعلانات منبثقة أو مقاطعة للمشاهدة! تطبيق خفيف للغاية بحجم أقل من 30 ميغابايت، يضمن تشغيلاً فورياً دون استهلاك موارد الهاتف.
+            </p>
+          </div>
+          <ul class="space-y-2 border-t border-white/5 pt-4 text-xs text-zinc-300">
+            <li><i class="fa-solid fa-check text-fuchsia-400 ml-1.5"></i> 0% إعلانات منبثقة</li>
+            <li><i class="fa-solid fa-check text-fuchsia-400 ml-1.5"></i> مشغل فيديو فائق السرعة</li>
+          </ul>
+        </div>
+
+        <!-- البطاقة 3 -->
+        <div class="glass-card rounded-3xl p-8 transition-all duration-300 flex flex-col justify-between">
+          <div>
+            <div class="w-14 h-14 rounded-2xl bg-purple-600/30 border border-purple-500/40 flex items-center justify-center text-purple-400 text-2xl mb-6">
+              <i class="fa-solid fa-download"></i>
+            </div>
+            <h3 class="text-2xl font-black text-white mb-3">تحميل مباشر للمشاهدة أوفلاين</h3>
+            <p class="text-zinc-400 text-sm leading-relaxed mb-6">
+              حمّل حلقات ومواسم كاملة بنقرة واحدة وشاهدها في السفر وبدون اتصال بالإنترنت، مع ميزة حفظ موضع المشاهدة وتخطي شارة البداية.
+            </p>
+          </div>
+          <ul class="space-y-2 border-t border-white/5 pt-4 text-xs text-zinc-300">
+            <li><i class="fa-solid fa-check text-purple-400 ml-1.5"></i> سرعة تحميل قصوى</li>
+            <li><i class="fa-solid fa-check text-purple-400 ml-1.5"></i> تخطي المقدمة تلقائياً</li>
+          </ul>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- خطوات التثبيت (Installation Steps) -->
+  <section id="how-to-install" class="py-20 bg-zinc-950/60 border-t border-white/5">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center max-w-3xl mx-auto mb-16">
+        <h2 class="text-3xl font-black text-white">طريقة تثبيت ملف الـ APK في 3 خطوات</h2>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
+        <div class="glass-card rounded-3xl p-6">
+          <div class="w-12 h-12 rounded-xl bg-violet-600/20 text-violet-400 font-black text-lg flex items-center justify-center mx-auto mb-4">1</div>
+          <h4 class="font-bold text-white text-lg mb-2">حمّل ملف الـ APK</h4>
+          <p class="text-zinc-400 text-xs leading-relaxed">اضغط على زر التحميل في الصفحة واحصل على أحدث نسخة بصيغة APK.</p>
+        </div>
+
+        <div class="glass-card rounded-3xl p-6">
+          <div class="w-12 h-12 rounded-xl bg-purple-600/20 text-purple-400 font-black text-lg flex items-center justify-center mx-auto mb-4">2</div>
+          <h4 class="font-bold text-white text-lg mb-2">اسمح بالتثبيت</h4>
+          <p class="text-zinc-400 text-xs leading-relaxed">اختر "السماح بالتثبيت من مصادر غير معروفة" عند فتح الملف إذا ظهر طلب الإذن.</p>
+        </div>
+
+        <div class="glass-card rounded-3xl p-6">
+          <div class="w-12 h-12 rounded-xl bg-fuchsia-600/20 text-fuchsia-400 font-black text-lg flex items-center justify-center mx-auto mb-4">3</div>
+          <h4 class="font-bold text-white text-lg mb-2">استمتع بالمشاهدة!</h4>
+          <p class="text-zinc-400 text-xs leading-relaxed">افتح AnimeVIP واستمتع بمكتبة غير محدودة من الأنمي فوراً وبدون أي اشتراك.</p>
+        </div>
+      </div>
+
+      <!-- زر تحميل سريع أسفل الخطوات -->
+      <div class="mt-12 text-center">
+        <a 
+          href="https://drive.google.com/file/d/1TSZv8tSu1x8qH1uAHBt6-gzwE9IuuFPf/view?usp=drivesdk"
+          target="_blank"
+          rel="noopener noreferrer"
+          onclick="downloadApk(event)"
+          class="inline-flex items-center gap-3 px-8 py-3.5 rounded-xl font-bold text-sm text-white bg-violet-600 hover:bg-violet-500 shadow-lg shadow-violet-600/30 hover:scale-105 transition-all cursor-pointer"
+        >
+          <i class="fa-solid fa-download"></i>
+          <span>جاهز للبدء؟ اضغط لتحميل ملف APK الآن</span>
+        </a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- قسم الدعوة للتحميل النهائي (Final CTA Section) -->
+  <section class="py-20 relative overflow-hidden bg-gradient-to-b from-black to-[#09090b]">
+    <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
+      <div class="glass-card rounded-3xl p-10 md:p-14 border border-violet-500/40 relative overflow-hidden">
+        <h2 class="text-3xl sm:text-4xl font-black text-white mb-4">
+          جاهز لخوض أروع مغامرة أنمي في حياتك؟
+        </h2>
+        <p class="text-zinc-300 text-base max-w-2xl mx-auto mb-8 leading-relaxed">
+          انضم إلى آلاف المستخدمين الآن واستمتع بمشاهدة كل أعمال الأنمي بأعلى دقة ممكنة مجاناً وبلا أي إعلانات مزعجة.
+        </p>
+        <div class="flex justify-center">
+          <a
+            href="https://drive.google.com/file/d/1TSZv8tSu1x8qH1uAHBt6-gzwE9IuuFPf/view?usp=drivesdk"
+            target="_blank"
+            rel="noopener noreferrer"
+            onclick="downloadApk(event)"
+            class="group inline-flex items-center gap-4 px-9 py-4 rounded-2xl font-black text-lg text-white bg-gradient-to-r from-violet-500 via-purple-600 to-fuchsia-600 hover:from-violet-400 hover:via-purple-500 hover:to-fuchsia-500 shadow-xl shadow-violet-600/50 hover:scale-105 transition-all duration-300 cursor-pointer ring-2 ring-violet-300/40"
+          >
+            <i class="fa-brands fa-android text-2xl text-emerald-300"></i>
+            <span>تحميل AnimeVIP مجاناً (APK)</span>
+            <i class="fa-solid fa-download text-white mr-1 group-hover:translate-y-1 transition-transform"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- التذييل (Footer) -->
+  <footer class="bg-[#060608] border-t border-white/5 py-12 text-zinc-400 text-sm">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center justify-between gap-6">
+      
+      <div class="flex items-center gap-3">
+        <div class="w-9 h-9 rounded-xl bg-violet-600 flex items-center justify-center text-yellow-300">
+          <i class="fa-solid fa-crown text-sm"></i>
+        </div>
+        <span class="text-xl font-black text-white font-sans">Anime<span class="text-violet-400">VIP</span></span>
+      </div>
+
+      <div class="flex items-center gap-4 text-lg">
+        <a href="https://t.me" target="_blank" class="hover:text-violet-400"><i class="fa-brands fa-telegram"></i></a>
+        <a href="https://discord.com" target="_blank" class="hover:text-violet-400"><i class="fa-brands fa-discord"></i></a>
+        <a href="https://twitter.com" target="_blank" class="hover:text-violet-400"><i class="fa-brands fa-x-twitter"></i></a>
+      </div>
+
+      <div class="text-xs text-zinc-500">
+        © 2026 تطبيق AnimeVIP. جميع الحقوق محفوظة لعشاق الأنمي.
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- وظيفة التحميل البرمجية -->
+  <script>
+    function downloadApk(event) {
+      if (event) event.preventDefault();
+      
+      // فتح رابط Google Drive المباشر في نافذة جديدة
+      if (APK_DOWNLOAD_URL && APK_DOWNLOAD_URL.startsWith('http')) {
+        window.open(APK_DOWNLOAD_URL, '_blank', 'noopener,noreferrer');
+      } else {
+        alert('يرجى التأكد من تعيين متغير APK_DOWNLOAD_URL');
+      }
+    }
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,6 @@
+{
+  "name": "AnimeVIP",
+  "description": "الصفحة الرسمية لتطبيق AnimeVIP - تطبيق الأنمي الأقوى لمشاهدة وتحميل أحدث مسلسلات وأفلام الأنمي بأعلى جودة وبدون إعلانات.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
